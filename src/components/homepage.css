@@ -1,0 +1,53 @@
+.navbar{
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2 span{
+    color:silver;
+    font-size: 1rem;
+}
+
+.users{
+    width: 60%;
+    margin:auto;
+    padding: .5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.search{
+    width: fit-content;
+    padding: 0 1rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.pagination{
+    width:fit-content;
+    margin:1rem auto;
+}
+
+
+@media screen and (max-width:480px) {
+    .users{
+        width: 80%;
+    }
+    .user{
+        flex-direction: column;
+    }
+}

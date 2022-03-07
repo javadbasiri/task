@@ -1,0 +1,35 @@
+.modal{
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    min-height: 30vh;
+}
+.box input{
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:480px) {
+    .box{
+        width: 80%;
+    }
+}
